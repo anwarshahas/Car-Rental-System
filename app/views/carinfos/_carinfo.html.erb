@@ -1,0 +1,6 @@
+<li>
+<%= link_to carinfo.car_brand+" "+carinfo.brand_model, car %>
+<% if current_user.admin? %>
+| <%= link_to "update", car %>
+<% end %>
+</li>

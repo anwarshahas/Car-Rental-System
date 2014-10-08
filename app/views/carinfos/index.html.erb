@@ -1,0 +1,25 @@
+<table class="profile" summary="Profile information">
+<tr>
+<td class="main">
+<h4>
+<ul class="users">
+<% @cars.each do |car| %>
+<li>
+<%= link_to car.car_brand.upcase + " " + car.brand_model.upcase, car %>
+<% if current_user.admin? %>
+| <%= link_to "Update", edit_carinfo_path(car) %> 
+| <%= link_to "Delete", carinfo_path(car), :method => :delete, :confirm => "You sure?",:title => "Delete" %>
+<% end %>
+</li>
+<% end %>
+</ul>
+</h4>
+</td>
+<td class="sidebar round">
+<% if current_user.admin? %>
+<%= link_to 'Add New Car', addcarinfo_path %>
+<% end %>
+
+</td>
+</tr>
+</table>

@@ -1,0 +1,28 @@
+<h1>Add Car Informations</h1>
+<%= form_for(@car_info) do |f| %>
+<%= render 'shared/error_messages2', :object => f.object %>
+<div class="field">
+<%= f.label :car_brand %><br />
+<%= f.text_field :car_brand %>
+</div>
+<div class="field">
+<%= f.label :brand_model %><br />
+<%= f.text_field :brand_model %>
+</div>
+<div class="field">
+<%= f.label :registration %><br />
+<%= f.text_field :registration %>
+</div>
+<div class="field">
+<%= f.label :passenger_count %><br />
+<%= f.text_field :passenger_count %>
+</div>
+<div class="field">
+<%= f.label :rate %><br />
+<%= f.text_field :rate %>
+</div>
+
+<div class="actions">
+<%= f.submit "Add" %>
+</div>
+<% end %>

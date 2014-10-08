@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<%= csrf_meta_tag %>
+<%= render 'layouts/stylesheets' %>
+<%= javascript_include_tag 'application' %>
+</head>
+<body>
+<div  class="round" style="width:1000px;height:40px;text-align:center;background-color:black;margin-left:auto;margin-right:auto;">
+	<h1 style="margin-bottom:0;color:white;">Looking For a Rent Car??</h1>
+</div>
+
+<div class="container">
+<%= render 'layouts/header' %>
+<section class="round">
+<% flash.each do |key, value| %>
+<div class="flash <%= key %>"><%= value %></div>
+<% end %>
+<%= yield %>
+</section>
+<%= render 'layouts/footer' %>
+</div>
+</body>
+</html>

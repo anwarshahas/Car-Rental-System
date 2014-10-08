@@ -1,0 +1,26 @@
+<table class="profile" summary="Car Information">
+<tr>
+<td class="main">
+<h1>Car Brand:  
+<%= @car_info.car_brand.upcase %>
+<br>
+Brand Model: 
+<%= @car_info.brand_model.upcase %>
+<br>
+Registration No: 
+<%= @car_info.registration %>
+<br>
+Passenger Capcity:
+<%= @car_info.passenger_count %>
+<br>
+Rate Per Day: 
+<%= @car_info.rate %>
+</h1>
+</td>
+<td class="sidebar round">
+<% if !current_user.admin? %>
+<%= link_to 'SELECT', bookcar_path %>
+<% end %>
+</td>
+</tr>
+</table>

@@ -1,0 +1,18 @@
+Network Analysis Commands/Tools
+
+All the students are requested to get acquainted with the following commands/tools which are used for anlaysing network statistics.
+
+1. Ping
+2. traceroute
+3. nslookup
+4. ifconfig
+5. whois
+6. netstat
+
+You are supposed to understand the purpose of each of these tools, its usage, output, the protocols used, the default values set for various fields etc.
+
+Based on these tools and Wireshark Lab, there will be a final exam in which you will be asked to run these tools on specific questions and report your observations. The exam will be of one hour duration.
+
+
+faculty
+04-04-2014

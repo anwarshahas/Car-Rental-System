@@ -1,0 +1,15 @@
+<h1>Booking Informations</h1>
+<%= form_for(@booking) do |f| %>
+<div class="field">
+<%= f.label :pick_up %><br />
+<%= f.date_select :pick_up %>
+</div>
+<div class="field">
+<%= f.label :return %><br />
+<%= f.date_select :return %>
+</div>
+
+<div class="actions">
+<%= f.submit "Submit" %>
+</div>
+<% end %>
